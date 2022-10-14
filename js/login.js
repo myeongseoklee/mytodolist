@@ -34,13 +34,6 @@ else {
 
 // 로그아웃
 
-// function deleteList(event) { // 메모리와 html에 저장된 정보를 삭제
-//   const div = event.target.parentElement;
-//   todos = todos.filter(item => item.id !== parseInt(div.id)); // memory 정보 삭제
-//   div.remove(); // html 정보 삭제
-//   saveList(); // 메모리 정보와 연결하여 로컬스토리지 정보 최신화
-// }
-
 const logout = function(event) {
   localStorage.clear();
   window.location.reload(); 
