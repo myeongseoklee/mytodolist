@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css"/>
+  <title>login</title>
+</head>
+<body>
+  <!-- background -->
+  <section id="background">
+    <video autoplay muted loop></video>
+  </section>
+  <!-- clock -->
+  <section id="clock">
+    <div id="today"></div>
+    <div id="time"></div>
+  </section>
+  <!-- greeting -->
+  <section>
+    <div id="greeting" class="hidden"></div>
+  </section>
+  <!-- login -->
+  <section id="login">
+    <form id="loginForm">
+      <input id="loginId" type="text" maxlength="15" placeholder="Plz, write your ID!" required autofocus/>
+      <button type="submit">Log_in</button>
+    </form>
+    <div id="logout" class="hidden">
+      <button id="logoutButton" type="click">log_out</button> 
+    </div>
+  </section>
+  <!-- to do list -->
+  <section id="todoList">
+    <form id="inputBox">
+      <input id="writeBox" type="text" placeholder="Write and Press enter!" required/>
+    </form>
+    <ul id="createdList"></ul>
+  </section>
+  <!-- quote -->
+  <section>
+    <div id="quote"></div>
+    <div id="author"></div>
+  </section>
+  <!-- weather -->
+  <section id="weather">
+    <div></div>
+    <div></div>
+  </section>
+  <script src="js/background.js"></script>
+  <script src="js/login.js"></script>
+  <script src="js/todo.js"></script>
+  <script src="js/clock.js"></script>
+  <script src="js/quote.js"></script>
+  <script src="js/weather.js"></script>
+</body>
+</html>
