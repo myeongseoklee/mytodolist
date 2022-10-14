@@ -7,6 +7,7 @@ const logoutButton = document.querySelector("#logoutButton");
 const HIDDEN_CLASSNAME = "hidden";
 const ID_KEY = "id";
 
+// 로그인
 const submitId = function (event) {
   const id = loginId.value;
   localStorage.setItem(ID_KEY, id);
@@ -31,15 +32,19 @@ else {
   loginForm.classList.remove(HIDDEN_CLASSNAME);
 }
 
+// 로그아웃
+
+// function deleteList(event) { // 메모리와 html에 저장된 정보를 삭제
+//   const div = event.target.parentElement;
+//   todos = todos.filter(item => item.id !== parseInt(div.id)); // memory 정보 삭제
+//   div.remove(); // html 정보 삭제
+//   saveList(); // 메모리 정보와 연결하여 로컬스토리지 정보 최신화
+// }
+
 const logout = function(event) {
   localStorage.clear();
-  greeting.classList.add(HIDDEN_CLASSNAME);
-  logoutDiv.classList.add(HIDDEN_CLASSNAME);
-  loginForm.classList.remove(HIDDEN_CLASSNAME);
-  loginId.value = ""; 
+  window.location.reload(); 
 }
-// 로그아웃 시 html의 todolist 삭제 기능 추가해야함.-> 이거 로그인화면이랑 메인 화면 분리해서 연결을 차단하는식? 으로 해야할거같은데.
-  
 
 loginForm.addEventListener("submit", submitId);
 logoutButton.addEventListener("click",logout);
