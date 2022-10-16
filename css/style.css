@@ -1,3 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
 .hidden {
   display: none;
+}
+
+body {
+  width: 100vw;
+  /* overflow: hidden; */
+}
+
+/* 로그인 화면 */
+#loginSection {
+  display: flex;
+  flex-direction: column;
+}
+
+#background {
+  position: relative;
+  width: 100vw;
+
+  /* overflow-x: hidden; */
+}
+
+#loginForm {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+}
+
+#greeting {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  font-size: 40px;
+  font-weight: 900;
+  color: white;
+}
+
+#loginId {
+  width: 500px;
+  height: 70px;
+  font-size: 40px;
+  font-weight: 900;
+  color: white;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  border-bottom: solid;
+  border-bottom-width: 0.7vh;
+  border-color: white;
+  outline: none;
+  text-align: center;
+}
+
+#loginForm > input::placeholder {
+  color: white;
+  font-weight: 900;
+  font-size: 40px;
+  text-align: center;
 }

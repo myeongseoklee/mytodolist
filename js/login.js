@@ -20,6 +20,7 @@ const paintGreeting = function () {
   greeting.classList.remove(HIDDEN_CLASSNAME);
   greeting.innerText = `Hello, ${userName}!`;
   loginForm.classList.add(HIDDEN_CLASSNAME);
+  loginId.classList.add(HIDDEN_CLASSNAME);
   logoutDiv.classList.remove(HIDDEN_CLASSNAME);
 }
 
